@@ -61,7 +61,7 @@ const SignUp = ({ setCurrentUser }) => {
 
         <form onSubmit={handleSignUpFormSubmit}>
           <div>
-            <label className='text-sm md:text-base'>username</label>
+            <label className="text-sm md:text-base">username</label>
             <input
               required
               name="name"
@@ -74,7 +74,7 @@ const SignUp = ({ setCurrentUser }) => {
             />
           </div>
           <div>
-            <label className='text-sm md:text-base'>country</label>
+            <label className="text-sm md:text-base">country</label>
             <Select
               required
               name="country"
@@ -86,7 +86,7 @@ const SignUp = ({ setCurrentUser }) => {
             />
           </div>
           <div>
-            <label className='text-sm md:text-base'>password</label>
+            <label className="text-sm md:text-base">password</label>
             <input
               required
               name="password"
@@ -122,8 +122,9 @@ const SignUp = ({ setCurrentUser }) => {
     </React.Fragment>
   );
 };
-const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser,
-});
 
-export default connect(mapStateToProps, { setCurrentUser })(SignUp);
+// const mapStateToProps = (state) => ({
+//   currentUser: state.user.currentUser,
+// });
+
+export default connect(null, { setCurrentUser })(SignUp);
