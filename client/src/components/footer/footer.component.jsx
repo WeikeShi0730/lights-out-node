@@ -1,26 +1,39 @@
 import React from "react";
+import { SiLinkedin, SiGithub, SiTwitter } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div className="m-6 mt-12">
-      <div className="text-xs md:text-sm text-center">
-        create by{" "}
+    <div className="absolute inset-x-0 bottom-10">
+      <div className="text-xs md:text-sm text-center">create by</div>
+      <div className="text-xs md:text-sm flex justify-center font-black gap-x-1">
         <a
-          className="flex justify-center items-center font-black"
           href="https://www.linkedin.com/in/weike-shi/"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           @ weike shi
-          <img src="/icons8-linkedin-24.png" alt="linkedin" />
         </a>
+        <SiLinkedin />
       </div>
-      <div className="text-xs md:text-sm">
+      <div className="text-xs md:text-sm flex justify-center font-black gap-x-1">
         <a
-          className="flex justify-center items-center font-black"
-          href="https://github.com/WeikeShi0730/lights-out-node"
+          href="https://github.com/WeikeShi0730/lights-out-firebase"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           @ github
-          <img src="/icons8-github-24.png" alt="github" />
         </a>
+        <SiGithub />
+      </div>
+      <div className="text-xs md:text-sm text-center flex justify-center font-black gap-x-1">
+        <a
+          href="https://twitter.com/vicshi97"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          @ twitter
+        </a>
+        <SiTwitter />
       </div>
     </div>
   );

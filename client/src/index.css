@@ -13,7 +13,13 @@ body {
   margin: 0;
   font-family: "formula1-display-regular";
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;background-image: url("assets/background.webp");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
 }
 
 code {
