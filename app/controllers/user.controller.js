@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const CryptoJS = require("crypto-js");
 
-// Create and Save a new Tutorial
+// Create and Save a new
 exports.create = async (req, res) => {
   if (!req.body.name) {
     res.status(500).send({
